@@ -8,13 +8,16 @@
 
 import UIKit
 
+
+/* Jl. Setail No. 1 Surabaya Jawa Timur 60291 */
+
 class CityTableViewController: UITableViewController {
     var place:[TheCities] = [
-        TheCities(name: "Cafe Deadend", type: "Coffee & Tea Shop", location: "G/F, 72 Po Hing Fong, Sheung Wan, Hong Kong", image: "cafedeadend.jpg", isVisited: true),
-        TheCities(name: "Homei", type: "Cafe", location: "Shop B, G/F, 22-24A Tai Ping San Street SOHO, Sheung Wan, Hong Kong", image: "homei.jpg", isVisited: false),
-        TheCities(name: "Teakha", type: "Tea House", location: "Shop B, 18 Tai Ping Shan Road SOHO, Sheung Wan, Hong Kong", image: "teakha.jpg", isVisited: false),
-        TheCities(name: "Cafe loisl", type: "Austrian / Causual Drink", location: "Shop B, 20 Tai Ping Shan Road SOHO, Sheung Wan, Hong Kong", image: "cafeloisl.jpg", isVisited: false),
-        TheCities(name: "Petite Oyster", type: "French", location: "24 Tai Ping Shan Road SOHO, Sheung Wan, Hong Kong", image: "petiteoyster.jpg", isVisited: false),
+        TheCities(name: "Monkasel", type: "Historical Monument", location: "Jalan Pemuda No.39 Genteng Kota Surabaya, Jawa Timur 60271", image: "cafedeadend.jpg", isVisited: true),
+        TheCities(name: "Tugu Pahlawan", type: "Historical Site", location: "Jalan Pahlawan, Kel. Alun-Alun Contong Kec. Bubutan Jawa Timur 60175", image: "homei.jpg", isVisited: false),
+        TheCities(name: "House Of Sampoerna", type: "Tea & Cafe House", location: "Taman Sampoerna No.6 Surabaya Jawa Timur 60163", image: "teakha.jpg", isVisited: false),
+        TheCities(name: "Taman Bungkul", type: "City Park", location: "Jalan Taman Bungkul Darmo Wonokromo Kota SBY, Jawa Timur 60291", image: "cafeloisl.jpg", isVisited: false),
+        TheCities(name: "Kebun Binatang (Surabaya Zoo)", type: "French", location: "Jl. Setail No. 1 Surabaya Jawa Timur 60291", image: "petiteoyster.jpg", isVisited: false),
         TheCities(name: "For Kee Restaurant", type: "Bakery", location: "Shop J-K., 200 Hollywood Road, SOHO, Sheung Wan, Hong Kong", image: "forkeerestaurant.jpg", isVisited: false),
         TheCities(name: "Po's Atelier", type: "Bakery", location: "G/F, 62 Po Hing Fong, Sheung Wan, Hong Kong", image: "posatelier.jpg", isVisited: false),
         TheCities(name: "Bourke Street Backery", type: "Chocolate", location: "633 Bourke St Sydney New South Wales 2010 Surry Hills", image: "bourkestreetbakery.jpg", isVisited: false),

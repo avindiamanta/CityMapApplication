@@ -16,7 +16,7 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("it works view did load")
         // Do any additional setup after loading the view.
         self.restaurantImageView.image = UIImage(named: theCities.image)
         
@@ -32,11 +32,16 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
         // Set navigation bar title
         title = self.theCities.name
         
+        // Should set add missing constraint on tableview on storyboard and set line to zero on label on storyboard
         tableView.estimatedRowHeight = 36.0;
         tableView.rowHeight = UITableViewAutomaticDimension;
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        print("Ini self sizing", tableView.rowHeight = UITableViewAutomaticDimension )
     }
     
     override func viewWillAppear(animated: Bool) {
+        print("it works view will it appear")
         super.viewWillAppear(animated)
         
         self.navigationController?.hidesBarsOnSwipe = false
@@ -50,11 +55,13 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("it works number of row")
         return 4
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! DetailTableViewCell
+        print("it works")
+        let cell = tableView.dequeueReusableCellWithIdentifier("DETAIL_CELL", forIndexPath: indexPath) as! DetailTableViewCell
         
         cell.backgroundColor = UIColor.clearColor()
         
@@ -88,6 +95,9 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
         
     }
     
+    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
     
     // MARK: - Navigation
     
