@@ -65,7 +65,7 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
         
         cell.backgroundColor = UIColor.clearColor()
         
-        // Configure the cell...
+        // Configure the cell.....
         cell.mapButton.hidden = true
         
         switch indexPath.row {
