@@ -9,31 +9,31 @@
 import UIKit
 
 
-/* Jl. Setail No. 1 Surabaya Jawa Timur 60291 */
+/* Jl. Ahmad Yani No.288 Gayungan Kota SBY, Jawa Timur 60234 */
 
 class CityTableViewController: UITableViewController {
     var place:[TheCities] = [
         TheCities(name: "Monkasel", type: "Historical Monument", location: "Jalan Pemuda No.39 Genteng Kota Surabaya, Jawa Timur 60271", image: "cafedeadend.jpg", isVisited: true),
         TheCities(name: "Tugu Pahlawan", type: "Historical Site", location: "Jalan Pahlawan, Kel. Alun-Alun Contong Kec. Bubutan Jawa Timur 60175", image: "homei.jpg", isVisited: false),
-        TheCities(name: "House Of Sampoerna", type: "Tea & Cafe House", location: "Taman Sampoerna No.6 Surabaya Jawa Timur 60163", image: "teakha.jpg", isVisited: false),
+        TheCities(name: "House Of Sampoerna", type: "Museum, Tea & Cafe House", location: "Taman Sampoerna No.6 Surabaya Jawa Timur 60163", image: "teakha.jpg", isVisited: false),
         TheCities(name: "Taman Bungkul", type: "City Park", location: "Jalan Taman Bungkul Darmo Wonokromo Kota SBY, Jawa Timur 60291", image: "cafeloisl.jpg", isVisited: false),
         TheCities(name: "Kebun Binatang (Surabaya Zoo)", type: "French", location: "Jl. Setail No. 1 Surabaya Jawa Timur 60291", image: "petiteoyster.jpg", isVisited: false),
-        TheCities(name: "For Kee Restaurant", type: "Bakery", location: "Shop J-K., 200 Hollywood Road, SOHO, Sheung Wan, Hong Kong", image: "forkeerestaurant.jpg", isVisited: false),
-        TheCities(name: "Po's Atelier", type: "Bakery", location: "G/F, 62 Po Hing Fong, Sheung Wan, Hong Kong", image: "posatelier.jpg", isVisited: false),
-        TheCities(name: "Bourke Street Backery", type: "Chocolate", location: "633 Bourke St Sydney New South Wales 2010 Surry Hills", image: "bourkestreetbakery.jpg", isVisited: false),
-        TheCities(name: "Haigh's Chocolate", type: "Cafe", location: "412-414 George St Sydney New South Wales", image: "haighschocolate.jpg", isVisited: false),
-        TheCities(name: "Palomino Espresso", type: "American / Seafood", location: "Shop 1 61 York St Sydney New South Wales", image: "palominoespresso.jpg", isVisited: false),
-        TheCities(name: "Upstate", type: "American", location: "95 1st Ave New York, NY 10003", image: "upstate.jpg", isVisited: false),
-        TheCities(name: "Traif", type: "American", location: "229 S 4th St Brooklyn, NY 11211", image: "traif.jpg", isVisited: false),
-        TheCities(name: "Graham Avenue Meats", type: "Breakfast & Brunch", location: "445 Graham Ave Brooklyn, NY 11211", image: "grahamavenuemeats.jpg", isVisited: false),
-        TheCities(name: "Waffle & Wolf", type: "Coffee & Tea", location: "413 Graham Ave Brooklyn, NY 11211", image: "wafflewolf.jpg", isVisited: false),
-        TheCities(name: "Five Leaves", type: "Coffee & Tea", location: "18 Bedford Ave Brooklyn, NY 11222", image: "fiveleaves.jpg", isVisited: false),
-        TheCities(name: "Cafe Lore", type: "Latin American", location: "Sunset Park 4601 4th Ave Brooklyn, NY 11220", image: "cafelore.jpg", isVisited: false),
-        TheCities(name: "Confessional", type: "Spanish", location: "308 E 6th St New York, NY 10003", image: "confessional.jpg", isVisited: false),
-        TheCities(name: "Barrafina", type: "Spanish", location: "54 Frith Street London W1D 4SL United Kingdom", image: "barrafina.jpg", isVisited: false),
-        TheCities(name: "Donostia", type: "Spanish", location: "10 Seymour Place London W1H 7ND United Kingdom", image: "donostia.jpg", isVisited: false),
-        TheCities(name: "Royal Oak", type: "British", location: "2 Regency Street London SW1P 4BZ United Kingdom", image: "royaloak.jpg", isVisited: false),
-        TheCities(name: "Thai Cafe", type: "Thai", location: "22 Charlwood Street London SW1V 2DY Pimlico", image: "thaicafe.jpg", isVisited: false)
+        TheCities(name: "Museum Kesehatan Dr. Adhyatma, MPH", type: "Museum", location: "Jl. Indrapura No. 17 Kemayoran Krembangan Kota SBY, Jawa Timur 60176", image: "forkeerestaurant.jpg", isVisited: false),
+        TheCities(name: "Tunjungan Plaza", type: "Shopping Center", location: "Jl. Basuki Rahmat No. 8-12 Kedungdoro Surabaya Jawa Timur 60261", image: "posatelier.jpg", isVisited: false),
+        TheCities(name: "Gedung Grahadi (Grahadi Building)", type: "Historical Building", location: "Jalan Gubernur Suryo Surabaya Jawa Timur 60271", image: "bourkestreetbakery.jpg", isVisited: false),
+        TheCities(name: "Masjid Muhammad Cheng Hoo (Muhammad Cheng Hoo Mosque)", type: "Unique religious site", location: "Jalan Gading No. 2, Kel. Ketabang, Kec. Genteng Jawa Timur 60272", image: "haighschocolate.jpg", isVisited: false),
+        TheCities(name: "Monumen Suroboyo (Suroboyo Monument)", type: "City Monument", location: "Jl. Setail No. 1 Surabaya Jawa Timur 60291", image: "palominoespresso.jpg", isVisited: false),
+        TheCities(name: "Jalesveva Jayamahe Monument", type: "City Monument", location: "None", image: "upstate.jpg", isVisited: false),
+        TheCities(name: "Monument Bambu Runcing", type: "City Monument", location: "Jl. Panglima Sudirman Genteng Kota SBY, Jawa Timur 60271", image: "traif.jpg", isVisited: false),
+        TheCities(name: "Monumen Perjuangan POLRI", type: "City Monument", location: "Jl. Raya Darmo Tegalsari Kota SBY, Jawa Timur 60265", image: "grahamavenuemeats.jpg", isVisited: false),
+        TheCities(name: "Surabaya Town Square", type: "Shopping Center", location: "Jalan Adityawarman No.55 Sawunggaling Wonokromo Kota SBY, Jawa Timur 60242", image: "wafflewolf.jpg", isVisited: false),
+        TheCities(name: "Plaza Surabaya", type: "Shopping Center", location: "Jl. Pemuda No.33-37 Genteng Kota SBY, Jawa Timur 60271", image: "fiveleaves.jpg", isVisited: false),
+        TheCities(name: "Royal Plaza", type: "Shopping Center", location: "Wonokromo Kota SBY 60243", image: "cafelore.jpg", isVisited: false),
+        TheCities(name: "Grand City mall", type: "Shopping Center", location: "Jalan Kusuma Bangsa Ketabang Surabaya Jawa Timur 60251", image: "confessional.jpg", isVisited: false),
+        TheCities(name: "Ciputra World", type: "Shopping Center", location: "Jl. Mayjen Sungkono No.87 Dukuh Pakis Kota SBY, Jawa Timur 60224", image: "barrafina.jpg", isVisited: false),
+        TheCities(name: "Ciputra Water Park", type: "Amusement Park", location: "CitraLAnd Surabaya Waterpark Boulevard Sambikerep Kota SBY, Jawa Timur 60219", image: "donostia.jpg", isVisited: false),
+        TheCities(name: "Pasar Genteng (Genteng market)", type: "Traditional Market", location: "Jl Genteng Besar Jawa Timur 60275", image: "royaloak.jpg", isVisited: false),
+        TheCities(name: "City of Tomorrow Mall", type: "Shopping Center", location: "Jl. Ahmad Yani No.288 Gayungan Kota SBY, Jawa Timur 60234", image: "thaicafe.jpg", isVisited: false)
     ]
     
     override func viewDidLoad() {

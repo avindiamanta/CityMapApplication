@@ -95,9 +95,7 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
         
     }
     
-    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
-    }
+    
     
     // MARK: - Navigation
     
